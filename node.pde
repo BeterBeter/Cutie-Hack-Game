@@ -113,11 +113,11 @@ class Node{
        rect(this.x + 5,this.y,nodeSize-10,nodeSize);
      }
       if(turrentH){
-       fill(palette[8]);
-       rect(this.x+nodeSize,this.y+nodeSize/2,nodeSize/5,nodeSize/5);
+       fill(palette[9]);
+       rect(this.x+nodeSize+ 5,this.y+nodeSize/2,nodeSize/3,nodeSize/3);
      }else if(turrentV){
-       fill(palette[8]);
-       rect(this.x + 5,this.y,nodeSize-10,nodeSize);
+       fill(palette[9]);
+       rect(this.x+nodeSize/2 + 5,this.y+nodeSize,nodeSize/5,nodeSize/5);
      }
     if(isWall || switchWall || turrentH || turrentV){
        collide(); 
