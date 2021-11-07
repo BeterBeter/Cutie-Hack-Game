@@ -221,22 +221,26 @@ class Node{
            bullets.get(i).inverseRun();
            if(turrentH || turrentV){
              this.turrentHealth -= 10;
+             bullets.get(i).dead = true;
            }
          }else if(isRightSide(bullets.get(i).x,bullets.get(i).y)){
            bullets.get(i).inverseRun();
           if(turrentH || turrentV){
              this.turrentHealth -= 10;
+             bullets.get(i).dead = true;
            }
          }
          else if(isTop(bullets.get(i).x,bullets.get(i).y)){
            bullets.get(i).inverseRise();
           if(turrentH || turrentV){
              this.turrentHealth -= 10;
+             bullets.get(i).dead = true;
            }
          }else if(isBottom(bullets.get(i).x,bullets.get(i).y)){
            bullets.get(i).inverseRise();
            if(turrentH || turrentV){
              this.turrentHealth -= 10;
+             bullets.get(i).dead = true;
            }
          }
       }
